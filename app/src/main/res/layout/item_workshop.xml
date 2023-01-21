@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvWorkshop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivWorkshop"
+                    android:layout_width="300dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="2dp"
+                    android:src="@drawable/meet"
+                    />
+            </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tvWorkshopName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="12dp"
+                    android:text="Android Studio: Kotlin"
+                    android:textColor="#281A60"
+                    android:textSize="24sp"
+                    app:fontFamily="@font/poppins_medium"
+                    app:layout_constraintTop_toBottomOf="@id/cvWorkshop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:drawablePadding="5dp"
+                    app:drawableStartCompat="@drawable/ic_labe" />
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="26 JAN 2023"
+                    android:textColor="#281A60"
+                    app:fontFamily="@font/poppins"
+                    android:textSize="16sp"
+                    android:drawablePadding="5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvWorkshopName"
+                    app:drawableStartCompat="@drawable/ic_baseline_date_range_24" />
+               <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnApply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                   android:layout_marginBottom="10dp"
+                   android:background="@drawable/button_bg"
+                   android:text="Apply"
+                   android:padding="5dp"
+                    android:textColor="#281A60"
+                    app:fontFamily="@font/poppins"
+                    app:layout_constraintTop_toBottomOf="@id/tvDate"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                    />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+<!--    <TextView-->
+<!--        android:id="@+id/tvDate"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/tv_background"-->
+<!--        android:elevation="2dp"-->
+<!--        android:text="25 DEC 2022"-->
+<!--        android:textColor="#281A60"-->
+<!--        app:fontFamily="@font/poppins"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatImageView-->
+<!--        android:id="@+id/ivWorkshop"-->
+<!--        android:layout_width="273dp"-->
+<!--        android:layout_height="159dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_marginBottom="80dp"-->
+<!--        android:src="@drawable/meet"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/btnApply"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="3dp"-->
+<!--        android:background="#281A60"-->
+<!--        android:elevation="2dp"-->
+<!--        android:padding="6dp"-->
+<!--        android:text="APPLY NOW"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:fontFamily="@font/poppins"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/ivWorkshop"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/ivWorkshop" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvWorkshopName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="3dp"-->
+<!--        android:elevation="2dp"-->
+<!--        android:padding="6dp"-->
+<!--        android:text="Digital Marketing"-->
+<!--        android:textColor="#281A60"-->
+<!--        android:textSize="25dp"-->
+<!--        app:fontFamily="@font/poppins_medium"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

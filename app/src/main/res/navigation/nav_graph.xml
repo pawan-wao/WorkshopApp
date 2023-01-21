@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/fragmentWorkshops">
+
+    <fragment
+        android:id="@+id/fragmentWorkshops"
+        android:name="com.assignment.ui.feed.FragmentWorkshops"
+        android:label="fragment_workshops"
+        tools:layout="@layout/fragment_workshops" >
+        <action
+            android:id="@+id/action_fragmentWorkshops_to_fragmentDashboard"
+            app:destination="@id/fragmentDashboard" />
+        <action
+            android:id="@+id/action_fragmentWorkshops_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDashboard"
+        android:name="com.assignment.ui.feed.FragmentDashboard"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_fragmentDashboard_to_fragmentWorkshops"
+            app:destination="@id/fragmentWorkshops" />
+        <action
+            android:id="@+id/action_fragmentDashboard_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.assignment.ui.authentication.FragmentLogin"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentSignup"
+            app:destination="@id/fragmentSignup" />
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentDashboard"
+            app:destination="@id/fragmentDashboard" />
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentWorkshops"
+            app:destination="@id/fragmentWorkshops" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSignup"
+        android:name="com.assignment.ui.authentication.FragmentSignup"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_fragmentSignup_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+        <action
+            android:id="@+id/action_fragmentSignup_to_fragmentDashboard"
+            app:destination="@id/fragmentDashboard" />
+    </fragment>
+</navigation>
